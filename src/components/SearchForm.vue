@@ -16,7 +16,7 @@
 export default {
   data() {
     return {
-      searchWord: '',
+      searchWord: "",
       setWordBool: false,
     };
   },
@@ -24,7 +24,7 @@ export default {
     setWord() {
       this.setWordBool = true;
     },
-    enter: function() {
+    enter() {
       if (!this.setWordBool) {
         return;
       }
@@ -33,7 +33,7 @@ export default {
     },
     searchRequest() {
       // console.log('リクエスト送信:', this.searchWord);
-      this.$emit('searchRequest', this.searchWord);
+      this.$emit("searchRequest", this.searchWord);
     },
   },
 };
